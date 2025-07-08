@@ -12,8 +12,6 @@ This Django-based web scraper automatically collects, displays, and tracks chang
   
 scraper/management/commands/scrape_fincen.py
 ## It can be run manually:
-
-```bash
 python manage.py scrape_fincen
 
 
@@ -39,7 +37,6 @@ After scraping:
 ## ⏰ How to set up scheduled scraping (cron)
 To scrape the FinCEN table automatically every day at 3 AM, add this cron job:
 
-```bash
 0 3 * * * /home/user/sebpo-scraper/venv/bin/python /home/user/sebpo-scraper/manage.py scrape_fincen >> /home/user/sebpo-scraper/logs/scrape.log 2>&1
 
 
